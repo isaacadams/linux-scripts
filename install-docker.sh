@@ -34,3 +34,7 @@ sudo apt update
 sudo apt install -y --no-install-recommends \
    docker-ce \
    cgroupfs-mount
+
+# allows current user to call docker without using sudo
+sudo usermod -aG docker ${USER}
+su - ${USER}
