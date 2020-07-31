@@ -38,3 +38,6 @@ sudo apt install -y --no-install-recommends \
 # allows current user to call docker without using sudo
 sudo usermod -aG docker ${USER}
 su - ${USER}
+
+# if the daemon comes from a host machine, run the following
+# echo "export DOCKER_HOST=localhost:2375" >> ~/.bash_profile
