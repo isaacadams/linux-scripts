@@ -12,7 +12,7 @@ sudo apt install -y \
  apt-transport-https \
  ca-certificates \
  curl \
- gnupg-agent \
+ gnupg1 \
  software-properties-common
 
 # Get the Docker signing key for packages
